@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Campo e Cidade Conectados</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>🌾🏙️ Campo e Cidade Conectados</h1>
+    <p>Clique no botão para ver as trocas entre o campo e a cidade.</p>
+  </div>
+
+  <div class="canvas-container" id="sketch-holder"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
+<div class="acessibilidade">
+  <button onclick="toggleMenu()" aria-label="Acessibilidade" class="abnace">
+    <img src="img/acessibilidade.png" alt="Ícone de acessibilidade">
+  </button>
+  <p class="creditos">
+    <a href="https://www.flaticon.com/br/icones-gratis/acessibilidade" title="acessibilidade ícones" target="_blank" rel="noopener">
+      Acessibilidade ícones<br> criados por Stockio - Flaticon
+    </a>
+  </p>
+
+
+  <div id="menuAcessibilidade" class="menu">
+    <button onclick="aumentarFonte()" class="botao">A+</button>
+    <button onclick="diminuirFonte()" class="botao">A-</button>
+    <button onclick="contraste()" class="botao">Contraste</button>
+    <button onclick="lerTexto()" class="botao" id="botaoLeitura">Ler</button>
+  </div>
+</div>
+
+
+   
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
